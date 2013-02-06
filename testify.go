@@ -10,7 +10,7 @@ type Testify struct {
 }
 
 func Create(newT *testing.T) *Testify {
-  return Testify{t}
+  return &Testify{newT}
 }
 
 func (self *Testify) SetT(newT *testing.T) {
